@@ -1,0 +1,37 @@
+{
+  "name": "pi-laya-classify",
+  "version": "0.2.0",
+  "description": "Pi extension that registers Laya classifier models for a self-hosted laya-serve HTTP server",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "laya",
+    "classifier",
+    "decision-model"
+  ],
+  "license": "MIT",
+  "author": "Piotr Martynski",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catanomad/pi-laya-classify.git"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ouijan/laya-client": "^0.2.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "endpoint": "http://localhost:1338",
+  "timeoutMs": 120000,
+  "models": [
+    {
+      "id": "laya-multilingual",
+      "name": "Laya (Multilingual)",
+      "model": "multilingual",
+      "contextWindow": 8192
+    },
+    {
+      "id": "laya-english",
+      "name": "Laya (English)",
+      "model": "english",
+      "contextWindow": 512
+    }
+  ]
+}
